@@ -1,137 +1,144 @@
 # 📊 Enterprise Sales Intelligence & Predictive Analytics Platform
 ### *End-to-End Decision Science Pipeline & Executive BI Dashboard*
 
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?logo=github)](https://github.com/AvijeetTiwari3/sales-intelligence-platform)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://avijeet-sales-intelligence.streamlit.app)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Database: SQLite](https://img.shields.io/badge/Database-SQLite%203-003B57?logo=sqlite&logoColor=white)](https://sqlite.org/)
-[![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://share.streamlit.io)
 [![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> **Architected by Avijeet Tiwari** | *Senior Data Analyst Portfolio (FAANG / Google Standard)*  
-> A production-grade business intelligence and predictive decision-support system analyzing **9,994 multi-year commercial transactions**. Designed with enterprise data governance, normalized relational modeling, unsupervised behavioral clustering, time-series forecasting, and an executive multi-page interface.
+> **Architected by Avijeet Tiwari** | *Senior Data Analyst Portfolio*  
+> A production-grade commercial analytics and predictive forecasting platform analyzing **9,994 multi-year retail transactions**. Features automated relational ETL, a 9-point statistical data governance framework, K-Means customer segmentation, Holt-Winters demand forecasting, and an executive multi-page BI suite.
 
 ---
 
-## 🖼️ Executive Dashboard Interface
+## 🌐 Live Interactive Application
+
+### 🔗 **[Click Here to Launch Live Dashboard](https://avijeet-sales-intelligence.streamlit.app)**
+*Real-time multi-page analytical application deployed on Streamlit Cloud with zero setup required.*
+
+---
+
+## 🖼️ Executive Dashboard Preview
 
 ![Executive Dashboard Overview](assets/dashboard_preview.png)
 
 ---
 
-## Executive Summary & Empirical ROI
+## 💼 Executive Summary & Quantified Business Impact
 
-Commercial retail organizations often suffer from hidden revenue leakages caused by unmonitored promotional discounting and customer churn. This platform was built to solve these core operational vulnerabilities through empirical analytics:
+Retail operations frequently suffer from margin erosion caused by unmonitored promotional discounting and customer attrition. This decision-support system identifies and resolves these financial vulnerabilities:
 
-| Strategic Pillar | Core Metric / Finding | Quantitative Impact | Actionable Leadership Recommendation |
+| Focus Area | Empirical Finding | Quantified Impact | Strategic Recommendation |
 |---|---|---|---|
-| **Pricing Inefficiency & Leakage** | Aggressive discounting (**> 40%**) caused persistent negative margins. | **-$99,558.59** in cumulative net loss | Institute automated margin guardrails capping discounts at 20%; eliminate promo codes on Table/Bookcase subcategories. |
-| **Customer Concentration Risk** | Pareto distribution (80/20 rule) confirmed high revenue reliance. | **Top 20% (158 accounts)** drive **47.96%** of total GMV | Deploy a Dedicated Account Management tier for VIP accounts to safeguard high-margin revenue streams. |
-| **At-Risk Customer Churn** | Unsupervised K-Means clustering flagged high-value lapsed accounts. | **253 customers** holding **$490,018.42** in GMV | Trigger automated retention incentives for accounts inactive for > 180 days before complete churn occurs. |
-| **Category Margin Disparity** | Substantial margin asymmetry across product portfolios. | **Technology (17.4% margin)** vs **Furniture (2.5% margin)** | Shift quarterly performance marketing ad spend away from low-margin bulky furniture toward high-yield tech accessories. |
-| **Demand Forecasting** | Holt-Winters additive seasonal model achieved high backtest accuracy. | **82.9% out-of-sample accuracy (17.1% MAPE)** | Align inventory procurement and fulfillment logistics 60 days ahead of recurring Q4 consumer demand surges (+40.2%). |
+| **Discount Margin Leakage** | Aggressive discounts (**> 40%**) consistently generated negative net profits. | **-$99,558.59** in net loss | Enforce automated margin caps at 20%; eliminate promo discounting on loss-leader subcategories (Tables, Bookcases). |
+| **Customer Concentration Risk** | Pareto distribution (80/20 rule) confirmed extreme revenue dependence. | **Top 20% (158 accounts)** drive **47.96%** of total GMV | Implement a dedicated VIP White-Glove tier to safeguard high-margin revenue streams. |
+| **At-Risk Customer Churn** | Unsupervised clustering identified lapsed high-value accounts. | **253 customers** holding **$490,018.42** in GMV | Trigger automated retention workflows for enterprise accounts inactive for > 180 days before total churn. |
+| **Category Economics** | Distinct margin variance between operational categories. | **Technology (17.4% margin)** vs **Furniture (2.5% margin)** | Reallocate quarterly performance marketing spend toward high-yield enterprise tech accessories. |
+| **Demand Forecasting** | Holt-Winters additive model accurately projected recurring seasonality. | **82.9% out-of-sample accuracy (17.1% MAPE)** | Align inventory procurement and fulfillment logistics 60 days ahead of recurring Q4 holiday surges (+40.2%). |
 
 ---
 
-## 🏗️ System Architecture & Data Flow
+## 🏗️ System Architecture & Data Pipeline
 
 ```mermaid
-flowchart TD
-    A["Raw Transaction Logs\n(Canonical 9,994 Orders CSV)"] --> B["pipeline/transform.py\n• Schema Normalization\n• Feature Engineering (Margin, Lead Time, Tiers)"]
-    B --> C["pipeline/validate.py\n• 9 Enterprise Integrity Assertions\n• Referential & Temporal Validation"]
-    C --> D[("database/sales.db\nRelational Star Schema Warehouse\n(Orders Fact + Customer / Product / Geo Dimensions)")]
-    D --> E["analysis/rfm_segmentation.py\n• Log Transform & Standardization\n• K-Means Behavioral Clustering"]
-    D --> F["analysis/cohort_analysis.py\n• Longitudinal Monthly Acquisition Cohorts\n• Retention Matrix Computation"]
-    D --> G["analysis/forecasting.py\n• Holt-Winters Exponential Smoothing\n• 6-Month Forward Projection & 95% CI"]
-    E & F & G --> H["dashboard/app.py\nInteractive Streamlit Executive BI Suite\n• Page 1: Financial & P&L Summary\n• Page 2: Operational Sales Deep Dive\n• Page 3: RFM & Cohort Dynamics\n• Page 4: Predictive Projections"]
+flowchart LR
+    A[Raw Transaction Logs] --> B[ETL and Feature Engineering]
+    B --> C[Data Quality and Governance Suite]
+    C --> D[(SQLite Analytics Warehouse)]
+    D --> E[K-Means RFM Segmentation]
+    D --> F[Longitudinal Cohort Retention]
+    D --> G[Holt-Winters Demand Forecasting]
+    E --> H[Multi-Page Streamlit BI Dashboard]
+    F --> H
+    G --> H
+    H --> I[Live Streamlit Cloud Deployment]
 ```
 
 ---
 
-## 🔬 Technical Implementation Details
+## 🔬 Analytics & Modeling Methodology
 
-### 1. Relational Modeling & Database Architecture (`database/schema.sql`)
-- Built on a normalized **Star Schema** with explicit foreign key enforcement (`PRAGMA foreign_keys = ON;`).
-- **Dimensions:** `customers` (793 records), `products` (1,862 records), `locations` (distinct regional geographies).
-- **Fact Table:** `orders` (9,994 transaction line-items) indexed on `order_date`, `customer_id`, `product_id`, and `region` for sub-second analytical queries.
+### 1. Relational Data Modeling (`database/schema.sql`)
+- Normalized **Star Schema** with primary/foreign key relational integrity (`PRAGMA foreign_keys = ON;`).
+- **Fact Table:** `orders` (9,994 line-item transactions) indexed on `order_date`, `customer_id`, `product_id`, and `region` for low-latency aggregations.
+- **Dimension Tables:** `customers` (793 records), `products` (1,862 records), `locations` (regional hierarchies).
 
-### 2. Enterprise Data Quality Framework (`pipeline/validate.py`)
-Automated data governance assertions run prior to warehouse ingestion:
-1. **Completeness:** 0 null values permitted across critical financial keys.
-2. **Entity Integrity:** Primary key uniqueness verified across all records.
-3. **Value Boundary Verification:** `sales > 0`, `quantity >= 1`, and `0.0 <= discount <= 1.0`.
-4. **Temporal Consistency:** Assertion that `ship_date >= order_date` (zero negative fulfillment days).
-5. **Referential Integrity:** Zero orphan keys between fact and dimension tables.
+### 2. Data Governance & Integrity Assertions (`pipeline/validate.py`)
+Automated data quality suite validating ingestion health:
+- **Completeness:** Zero missing values across financial transaction attributes.
+- **Uniqueness:** Primary key uniqueness enforced across `row_id`.
+- **Domain Boundaries:** Logical verification of `sales > 0`, `quantity >= 1`, and `0.0 <= discount <= 1.0`.
+- **Temporal Consistency:** Assertion that `ship_date >= order_date` (zero negative fulfillment durations).
+- **Referential Integrity:** Zero orphan foreign keys between fact and dimension entities.
 
 ### 3. Customer RFM Segmentation via K-Means (`analysis/rfm_segmentation.py`)
-- Engineered **Recency** (days elapsed from reference snapshot), **Frequency** (unique order count), and **Monetary** (lifetime revenue).
-- Mitigated skewness using log transformations (`np.log1p`) followed by `StandardScaler`.
-- Optimized K-Means ($k=4$) into distinct business segments:
-  - **Champions:** High frequency ($8.6$ orders avg), top spenders ($$4,773$ avg LTV), driving **$1.23M** (53.6% of GMV).
-  - **Loyal Customers:** Consistent transaction volume ($6.8$ orders avg), driving **$540K** revenue.
-  - **At-Risk:** High historical monetary spend but lapsed recency, holding **$490K** in vulnerable capital.
-  - **Hibernating:** Infrequent buyers ($2.6$ orders avg) requiring low-cost re-engagement.
+- Extracted behavioral features: **Recency** (days since last order), **Frequency** (order count), and **Monetary** (gross spend).
+- Applied log-transformation (`np.log1p`) and `StandardScaler` to normalize skewed financial distributions.
+- Fitted K-Means ($k=4$) into four actionable business segments:
+  - **Champions:** High-frequency, high-spend tier driving **$1.23M** (53.6% of GMV).
+  - **Loyal Accounts:** Consistent transaction history driving **$540K** revenue.
+  - **At-Risk:** Formerly active accounts with high historical LTV but high recency, holding **$490K** in vulnerable capital.
+  - **Hibernating:** Infrequent buyers requiring low-cost re-engagement.
 
-### 4. Time Series Forecasting & Decomposition (`analysis/forecasting.py`)
+### 4. Predictive Time-Series Forecasting (`analysis/forecasting.py`)
 - Implemented **Triple Exponential Smoothing (Holt-Winters)** with additive trend and 12-month seasonality components.
-- Conducted out-of-sample backtesting against the final 6 months of historical data:
-  - **MAE:** $\$14,333.51$
-  - **RMSE:** $\$18,278.01$
-  - **MAPE:** $17.12\%$
-  - **Model Prediction Accuracy:** **$82.88\%$**
-- Generated forward 6-month projections with dynamic $95\%$ confidence intervals ($1.96 \times \sigma_{\text{residuals}}$) for inventory planning.
+- Evaluated against out-of-sample holdout validation:
+  - **Mean Absolute Error (MAE):** $14,333.51
+  - **Root Mean Squared Error (RMSE):** $18,278.01
+  - **Mean Absolute Percentage Error (MAPE):** 17.12%
+  - **Backtest Prediction Accuracy:** **82.88%**
+- Generated forward 6-month projections with $95\%$ confidence bounds ($1.96 \times \sigma$) for executive inventory planning.
 
 ---
 
-## 🗂️ Repository Structure
+## 🗂️ Project Structure
 
 ```
 sales-intelligence-platform/
 │
-├── .github/
-│   └── workflows/ci.yml                # Automated CI pipeline (lint, quality checks, pytest)
 ├── .streamlit/
-│   └── config.toml                     # Professional dark executive palette
+│   └── config.toml                     # Modern slate/indigo executive theme
 │
 ├── assets/
-│   ├── dashboard_preview.png           # High-resolution dashboard graphic
-│   └── generate_preview.py             # Asset rendering engine
+│   ├── dashboard_preview.png           # Executive dashboard interface banner
+│   └── generate_preview.py             # Image generation utility
 │
 ├── data/
-│   ├── raw/superstore.csv              # Canonical 9,994 transaction records
-│   └── processed/                      # Analytics-ready Parquet & CSV stores
+│   ├── raw/superstore.csv              # Canonical 9,994 order records
+│   └── processed/                      # Analytics-ready Parquet and CSV files
 │
 ├── database/
-│   ├── schema.sql                      # DDL schema definition & performance indexes
+│   ├── schema.sql                      # DDL schema definition & analytical indexes
 │   └── sales.db                        # SQLite relational data warehouse
 │
 ├── pipeline/
-│   ├── ingest.py                       # Dimension & fact extraction ETL loader
-│   ├── transform.py                    # Cleaning, typing, and feature engineering
+│   ├── ingest.py                       # Dimension and fact relational loader
+│   ├── transform.py                    # Cleansing and analytical feature engineering
 │   └── validate.py                     # 9-point data governance verification suite
 │
 ├── analysis/
-│   ├── eda.ipynb                       # Jupyter exploratory notebook
-│   ├── eda_summary.py                  # P&L metrics & elasticity calculators
-│   ├── rfm_segmentation.py             # K-Means customer segmentation engine
+│   ├── eda.ipynb                       # Jupyter exploratory analysis notebook
+│   ├── eda_summary.py                  # P&L elasticity calculators
+│   ├── rfm_segmentation.py             # K-Means customer behavioral clustering
 │   ├── cohort_analysis.py              # Cohort retention matrix computation
 │   └── forecasting.py                  # Holt-Winters seasonal revenue forecasting
 │
 ├── dashboard/
-│   ├── app.py                          # Streamlit application portal & executive KPI view
+│   ├── app.py                          # Streamlit application portal & executive overview
 │   ├── components/
-│   │   ├── charts.py                   # Plotly dark theme chart generator
-│   │   ├── filters.py                  # Dynamic global analytics slicer
-│   │   └── kpi_cards.py                # Styled HTML/CSS metric cards
+│   │   ├── charts.py                   # Plotly dark theme chart factory
+│   │   ├── filters.py                  # Global sidebar analytics slicer
+│   │   └── kpi_cards.py                # Responsive metric card components
 │   └── pages/
-│       ├── 01_executive_summary.py     # P&L trends, profit leaders & loss leaders
-│       ├── 02_sales_deep_dive.py       # Geographic choropleth & discount decay
-│       ├── 03_customer_segments.py     # RFM bubble landscape & cohort retention
-│       └── 04_forecasting.py           # 6-month projection & seasonal decomposition
+│       ├── 01_executive_summary.py     # P&L metrics, profit leaders & loss leaders
+│       ├── 02_sales_deep_dive.py       # US geographic choropleth & discount decay
+│       ├── 03_customer_segments.py     # RFM bubble map & cohort retention heatmap
+│       └── 04_forecasting.py           # 6-month forward projections & CI bounds
 │
 ├── tests/
 │   ├── test_pipeline.py                # Data engineering assertions
-│   ├── test_analysis.py                # ML clustering & time-series unit tests
+│   ├── test_analysis.py                # ML clustering and time-series unit tests
 │   └── smoke_test_dashboard.py         # End-to-end HTTP server smoke test
 │
 ├── requirements.txt                    # Production environment dependencies
@@ -141,55 +148,28 @@ sales-intelligence-platform/
 
 ---
 
-## ⚡ Quickstart Guide
+## ⚡ Local Setup
 
-### 1. Local Setup
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/AvijeetTiwari3/sales-intelligence-platform.git
 cd sales-intelligence-platform
 
-# Create and activate virtual environment
+# 2. Setup virtual environment & dependencies
 python -m venv venv
-# On Windows:
+# Windows:
 venv\Scripts\activate
-# On macOS/Linux:
+# Mac/Linux:
 source venv/bin/activate
-
-# Install dependencies
 pip install -r requirements.txt
-```
 
-### 2. Execute Data Pipeline & Tests
-```bash
-# Run data transformation & DB ingestion
-python pipeline/transform.py
-python pipeline/ingest.py
-
-# Run enterprise validation suite
+# 3. Run validation & tests
 python pipeline/validate.py
-
-# Run test suite
 pytest tests/
-```
 
-### 3. Launch Executive Dashboard
-```bash
+# 4. Launch interactive dashboard
 streamlit run dashboard/app.py
 ```
-Open **`http://localhost:8501`** in your browser.
-
----
-
-## 🌐 Deploy to Streamlit Cloud (100% Free)
-
-1. Fork or push this repository to your GitHub account (`AvijeetTiwari3/sales-intelligence-platform`).
-2. Log into [Streamlit Community Cloud](https://share.streamlit.io/).
-3. Select **"Create app"** with settings:
-   - **Repository:** `AvijeetTiwari3/sales-intelligence-platform`
-   - **Branch:** `main`
-   - **Main file path:** `dashboard/app.py`
-4. Click **Deploy!** Live public dashboard will be accessible via browser immediately.
 
 ---
 
@@ -202,10 +182,10 @@ Open **`http://localhost:8501`** in your browser.
 
 • Built a Holt-Winters seasonal time-series forecasting model achieving 82.9% out-of-sample prediction accuracy (17.1% MAPE) with 95% confidence intervals for 6-month executive inventory and demand planning | Statsmodels, Plotly
 
-• Architected an interactive 4-page Streamlit analytics dashboard backed by a normalized SQLite star schema, automated 9-point data governance assertions, and longitudinal cohort retention matrices | Pytest, GitHub Actions CI
+• Architected an interactive 4-page Streamlit analytics dashboard backed by a normalized SQLite star schema, automated 9-point data governance assertions, and longitudinal cohort retention matrices | Pytest, Plotly
 ```
 
 ---
 
 ## 📄 License
-Distributed under the **MIT License**. See `LICENSE` for more information.
+Distributed under the **MIT License**. See `LICENSE` for details.
