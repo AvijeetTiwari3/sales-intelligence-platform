@@ -173,19 +173,5 @@ streamlit run dashboard/app.py
 
 ---
 
-## 💼 Resume Bullet Points (Google / FAANG Format)
-
-```text
-• Engineered an end-to-end enterprise sales intelligence platform analyzing 9,994 retail transactions; identified pricing inefficiencies and discount margin leakage (>40% discount) saving $99.5K in annual margin loss | Python, SQL, Streamlit
-
-• Developed a K-Means RFM customer segmentation model grouping 793 accounts into 4 behavioral cohorts; discovered 253 "At-Risk" accounts holding $490K (21.3%) of total historical revenue, enabling targeted churn mitigation | Scikit-learn, Pandas
-
-• Built a Holt-Winters seasonal time-series forecasting model achieving 82.9% out-of-sample prediction accuracy (17.1% MAPE) with 95% confidence intervals for 6-month executive inventory and demand planning | Statsmodels, Plotly
-
-• Architected an interactive 4-page Streamlit analytics dashboard backed by a normalized SQLite star schema, automated 9-point data governance assertions, and longitudinal cohort retention matrices | Pytest, Plotly
-```
-
----
-
 ## 📄 License
 Distributed under the **MIT License**. See `LICENSE` for details.
