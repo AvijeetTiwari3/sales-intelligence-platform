@@ -1,7 +1,7 @@
 # 📊 Enterprise Sales Intelligence & Predictive Analytics Platform
 ### *End-to-End Decision Science Pipeline & Executive BI Dashboard*
 
-[![CI Pipeline](https://github.com/AvijeetTiwari3/sales-intelligence-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/AvijeetTiwari3/sales-intelligence-platform/actions)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?logo=github)](https://github.com/AvijeetTiwari3/sales-intelligence-platform)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Database: SQLite](https://img.shields.io/badge/Database-SQLite%203-003B57?logo=sqlite&logoColor=white)](https://sqlite.org/)
 [![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://share.streamlit.io)
