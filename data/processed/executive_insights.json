@@ -1,0 +1,93 @@
+{
+  "kpis": {
+    "total_sales": 2297200.86,
+    "total_profit": 286397.02,
+    "overall_margin_pct": 12.47,
+    "total_orders": 5009,
+    "total_customers": 793,
+    "avg_order_value": 458.61
+  },
+  "discount_leakage": {
+    "deep_discount_loss_usd": -99558.59,
+    "tiers": [
+      {
+        "discount_tier": "0% (Full Price)",
+        "total_sales": 1087908.47,
+        "total_profit": 320987.6032,
+        "order_count": 2644,
+        "avg_margin": 34.02
+      },
+      {
+        "discount_tier": "1% - 20% (Low)",
+        "total_sales": 846522.2405,
+        "total_profit": 100785.4745,
+        "order_count": 2507,
+        "avg_margin": 17.44
+      },
+      {
+        "discount_tier": "21% - 40% (Moderate)",
+        "total_sales": 234137.8978,
+        "total_profit": -35817.4655,
+        "order_count": 400,
+        "avg_margin": -16.69
+      },
+      {
+        "discount_tier": "> 40% (Aggressive)",
+        "total_sales": 128632.252,
+        "total_profit": -99558.5905,
+        "order_count": 737,
+        "avg_margin": -108.9
+      }
+    ]
+  },
+  "category_summary": [
+    {
+      "category": "Furniture",
+      "sales": 741999.7953,
+      "profit": 18451.2728,
+      "profit_margin": 2.49
+    },
+    {
+      "category": "Office Supplies",
+      "sales": 719047.032,
+      "profit": 122490.8008,
+      "profit_margin": 17.04
+    },
+    {
+      "category": "Technology",
+      "sales": 836154.033,
+      "profit": 145454.9481,
+      "profit_margin": 17.4
+    }
+  ],
+  "regional_summary": [
+    {
+      "region": "Central",
+      "sales": 501239.8908,
+      "profit": 39706.3625,
+      "profit_margin": 7.92
+    },
+    {
+      "region": "East",
+      "sales": 678781.24,
+      "profit": 91522.78,
+      "profit_margin": 13.48
+    },
+    {
+      "region": "South",
+      "sales": 391721.905,
+      "profit": 46749.4303,
+      "profit_margin": 11.93
+    },
+    {
+      "region": "West",
+      "sales": 725457.8245,
+      "profit": 108418.4489,
+      "profit_margin": 14.94
+    }
+  ],
+  "pareto_principle": {
+    "top_20_pct_customers_count": 158,
+    "top_20_pct_revenue_share": 47.96
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mae": 14333.51,
+  "rmse": 18278.01,
+  "mape": 17.12,
+  "accuracy_pct": 82.88,
+  "total_historical_months": 48,
+  "forecast_horizon_months": 6
+}
