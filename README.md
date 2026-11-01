@@ -7,7 +7,7 @@
 [![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> **Architected by Avijeet Tiwari** | *Senior Data Analyst Portfolio*  
+
 > A production-grade commercial analytics and predictive forecasting platform analyzing **9,994 multi-year retail transactions**. Features automated relational ETL, a 9-point statistical data governance framework, K-Means customer segmentation, Holt-Winters demand forecasting, and an executive multi-page BI suite.
 
 ---
